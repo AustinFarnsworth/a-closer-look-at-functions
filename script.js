@@ -42,6 +42,18 @@ const createBooking = function(flightNumber,
 }
 
 
-    checkIn(flight, jay);
-    console.log(flight);
-    console.log(jay);
+    // checkIn(flight, jay);
+    // console.log(flight);
+    // console.log(jay);
+
+    const flightNumber = flight; 
+    const passenger = jonas; 
+
+    const newPassport = function(person) {
+        person.passport = Math.trunc(Math.random() +
+        1000000000); 
+
+    }
+
+    newPassport(jonas);
+    checkIn(flight, jonas);
